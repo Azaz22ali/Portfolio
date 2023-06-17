@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(My\ project-1\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding:10px 10%;
+}
+
+.logo{
+    width: 200px;
+    float: left;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+    position: relative;
+    top: 40px;
+    
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background:#c10b7b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.text h1 .name {
+    color: #c10b7b;
+  }
+
+  /*......... About Me.......*/
+
+  #about{
+    padding: 80px 0;
+    color: #ababab;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .col-1{
+    flex-basis: 35%;
+  }
+  .col-1 img{
+    width: 100%;
+    border-radius: 15%;
+  }
+
+  .col-2{
+    flex-basis: 55%;
+  }
+
+  .Sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .para p{
+    font-size: 60px;
+  }
+
+  .tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+  }
+
+  .tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link + .tab-link {
+    margin-left: 30px;
+}
+
+.tab-link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #c10b7b;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-link:hover::before, .tab-link.active-link::before {
+    width: 100%;
+}
+
+.tab-link.active-link {
+    font-size: 25px;
+}
+
+  .tab-content ul li span{
+    color: #167e9e;
+    font-size: 17px;
+  }
+
+  .tab-content{
+    display: none;
+  }
+
+.tab-content.active-tab{
+  display: block;
+}
+
+/* ......INTERNSHIP..... */
+
+#container {
+  text-align: center;
+}
+#internship {
+  font-size: 35px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  font-weight: bold; /* Added */
+}
+#internship span {
+  color: #c10b7b;
+}
+#details {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+}
+#details h2 {
+  margin: 0;
+}
+#details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#details p {
+  padding-left: 30px; /* Added */
+}
+#details p:hover {
+  color: #c10b7b;
+  transition: color 0.5s; /* Added */
+}
+
+#certificate {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#certificate img {
+  width: 400px;
+  height: auto;
+}
+
+/* ........Contact...... */
+
+.contact-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-section li {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section li img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contact-section li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+}
+#Resume {
+  font-size: 18px; 
+}
+
+#Resume img {
+  width: 10%; 
+}
+
+#Resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+#Resume p {
+  margin-left: 10px;
+  font-size: 18px;
+  color:#c10b7b;
+}
+
+#certificate a {
+  color: #c10b7b;
+}
+
+#certificate img {
+  width: 3%;
+  height: 3%;
+}
+
+
+/* ..........making responsive...... */
+
+@media only screen and (max-width: 480px) {
+  /* Adjust the font sizes */
+  .text p {
+    font-size: 16px;
+  }
+  .text h1 {
+    font-size: 24px;
+  }
+  .Sub-title {
+    font-size: 20px;
+  }
+  .Para p {
+    font-size: 14px;
+  }
+  .tab-titles {
+    font-size: 16px;
+  }
+  .tab-link {
+    font-size: 12px;
+  }
+  .tab-content ul li {
+    font-size: 12px;
+  }
+  .tab-content ul li span {
+    font-size: 14px;
+  }
+  #details h2 {
+    font-size: 20px;
+  }
+  #details p {
+    font-size: 12px;
+  }
+
+  /* Adjust the image sizes */
+  .logo {
+    width: 80px;
+  }
+  #about .col-1 img {
+    width: 100%;
+  }
+
+  /* Make header container responsive */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo5 {
+    margin: 10px 0;
+    width: 150px;
+  }
+  .header-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+  .header-container ul li {
+    margin: 10px 0;
+  }
+  .header-container ul li a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+}
